@@ -11,7 +11,7 @@
         .calculator-container, .tuble {
             border: 1px solid #ccc;
             border-radius: 10px;
-            background-color: #f9f9f9;
+            background-color:  #4e7766;
         }
         .hidden { display: none; }
     </style>
@@ -27,28 +27,31 @@
             
             <h3>Тип услуги:</h3>
             <label class="mx-2"> 
-                <input type="radio" name="serviceType" value="type1" checked> Nuts
+                <input type="radio" name="serviceType" value="type1" checked> Вишневый сад 
             </label>
             <label class="mx-2">
-                <input type="radio" name="serviceType" value="type2"> Грейпфрутовый сок
+                <input type="radio" name="serviceType" value="type2"> Юмористические рассказы
             </label>
             <label class="mx-2">
-                <input type="radio" name="serviceType" value="type3"> Сочное кислое зелёное яблоко
+                <input type="radio" name="serviceType" value="type3"> Палата №6
             </label>
 
             <!-- Опции (для услуги 2) -->
             <div id="options-container" class="hidden">
-                <label for="options">Выберите опцию:</label>
+                <label for="options">Выберите рассказ:</label>
                 <select id="options">
-                    <option value="opt1">В пакете</option>
-                    <option value="opt2">В бутылке +50 руб.</option>
+                    <option value="opt1">Хамелеон</option>
+                    <option value="opt2">Смерть чиновника</option>
+                    <option value="opt2">Толстый и тонкий</option>
+                    <option value="opt2">Лошадиная фамилия</option>
+                    <option value="opt2">Злоумышленник</option>
                 </select>
             </div>
 
             <!-- Свойство (для услуги 3) -->
             <div id="property-container" class="hidden">
                 <label for="property">
-                    <input type="checkbox" id="property"> Помыть за 15 руб. сверху?
+                    <input type="checkbox" id="property"> Пьянствовать глупо, неприлично, но пить – умирать, и не пить – умирать.
                 </label>
             </div>
 
@@ -57,26 +60,26 @@
     </div>
             
             <div class="tuble col-md-4 m-3 p-2">
-                <h2>Товары и цены</h2>
+                <h2>Книги и цены</h2>
                 <table class="table product-table mt-3">
                     <thead>
                         <tr>
-                            <th>Товар</th>
+                            <th>Книги</th>
                             <th>Цена от (руб.)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nuts</td>
-                            <td>47</td>
+                            <td>Вишневый сад </td>
+                            <td>209</td>
                         </tr>
                         <tr>
-                            <td>Грейпфрутовый сок</td>
-                            <td>159</td>
+                            <td>Юмористические рассказы</td>
+                            <td>198</td>
                         </tr>
                         <tr>
-                            <td>Сочное кислое зелёное яблоко</td>
-                            <td>25</td>
+                            <td>Палата №6 </td>
+                            <td>232</td>
                         </tr>
                     </tbody>
                 </table>
