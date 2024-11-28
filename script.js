@@ -1,18 +1,21 @@
 // Цены за каждый тип услуги
 const servicePrices = {
-    type1: 47,
-    type2: 159,
-    type3: 25
+    type1: 209,
+    type2: 198,
+    type3: 232
 };
 
 // Дополнительные опции и их влияния на цену для услуги 2
 const optionPrices = {
-    opt1: 0,
-    opt2: 50
+    opt1: 50,
+    opt2: 49,
+    opt3: 48,
+    opt4: 47,
+    opt5: 46
 };
 
 // Доплата за свойство для услуги 3
-const propertyPrice = 15;
+const propertyPrice = 10000;
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('calc-form');
@@ -47,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             totalPriceElement.textContent = '0';
         }
         else if(totalPrice<0){
-            totalPriceElement.textContent = `ВЫ НЕ МОЖЕТЕ КУПИТЬ ОТРИЦАТЕЛЬНОЕ ЧИСЛО ЧЕГО ЛИБО`;
+            totalPriceElement.textContent = `МЫ НЕ В ПАЛАТЕ № 6!!!!`;
         }
         else{
             totalPriceElement.textContent = totalPrice;
